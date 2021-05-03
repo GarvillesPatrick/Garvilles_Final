@@ -1,0 +1,180 @@
+body > div:nth-child(2) {
+	text-align: center;
+	padding: 13%;
+	background: url('../images/g.jpg');
+	background-color: rgba(0, 0, 0, 0.7);
+	background-size: 100% 100%;
+	background-blend-mode: darken;
+	color: white;
+}
+
+
+body > div:nth-child(2) > div > :is(h1, p) {
+	margin: 0;
+}
+
+body > div:nth-child(3) {
+	padding: 5% 20%;
+	text-align: center;
+}
+
+body > div:nth-child(3) > div {
+	display: flex;
+}
+body > div:nth-child(3) > a {
+	text-decoration: none;
+	background: #72b6c7;
+	display: block;
+	padding: 1rem;
+	color: white;
+	box-sizing: border-box;
+	border-radius: 10px;
+	transition: background 500ms;
+}
+
+body > div:nth-child(3) > a:hover {
+	background-color: #439eb4;
+}
+
+body > div:nth-child(3) > div > div {
+	width: 50%;
+	padding: 2%;
+}
+
+body > div:nth-child(3) > div > div > :is(input, textarea) {
+	display: block;
+	padding: 3%;
+	font-size: 2vmin;
+	width: 100%;
+	margin: 1rem auto;
+	box-sizing: border-box;
+	border-radius: 10px;
+	border: 1px solid gray;
+	transition: border 500ms;
+	resize: none;
+}
+
+body > div:nth-child(3) > div > div > input:focus {
+	border: 1px solid #fff700;
+	outline: 0;
+}
+
+body > div:nth-child(3) > div > div:nth-child(2) > textarea {
+	display: inline;
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	outline: 0;
+}
+body > div:nth-child(3) > div > div:nth-child(2) > textarea:focus {
+	border: 1px solid #fff700;
+}
+
+body > div:nth-child(4) {
+	padding: 5%;
+	background-color: #72b6c7;
+	color: white;
+}
+body > div:nth-child(4) > div {
+	display: flex;
+	justify-content: space-between;
+}
+
+body > div:nth-child(4) > div > div:nth-child(1) > h1 {
+	margin: 0;
+}
+
+body > div:nth-child(4) > div > div:nth-child(1) {
+	width: 30%;
+}
+body > div:nth-child(4) > div > div:nth-child(2) {
+	width: 30%;
+	padding: 5%;
+}
+
+body > div:nth-child(4) > div > div:nth-child(2) > a {
+	font-size: 3vmin;
+	text-decoration: none;
+	color: white;
+	font-weight: bold;
+	text-decoration: underline;
+}
+
+body > div:nth-child(5) {
+	display: flex;
+	padding: 5%;
+}
+body > div:nth-child(5) > div {
+	width: 100%;
+}
+
+body > div:nth-child(5) > div:nth-child(1) img {
+	height: 100%;
+	width: 100%;
+}
+
+body > div:nth-child(5) > div:nth-child(2) {
+	padding: 5%;
+}
+
+body > div:nth-child(5) > div:nth-child(2) a {
+	text-align: center;
+	text-decoration: none;
+	color: #3b3d76;
+	border-radius: 10px;
+	border: 3px solid #3b3d76;
+	padding: 1rem;
+	margin: 1rem 0;
+	display: inline-block;
+	transition: background 500ms, color 500ms;
+}
+
+body > div:nth-child(5) > div:nth-child(2) a:hover {
+	background-color: #3b3d76;
+	color: white;
+}
+
+/* Responsive */
+
+@media screen and (max-width: 640px) {
+	body > div:nth-child(3) > div {
+		flex-direction: column;
+	}
+	body > div:nth-child(3) > div > div {
+		width: 100%;
+		padding: 0;
+	}
+	body > div:nth-child(3) > div > div > :is(input, textarea) {
+		margin: 1rem auto;
+	}
+
+	body > div:nth-child(3) > a {
+		margin: 1rem auto;
+	}
+
+	body > div:nth-child(4) > div {
+		flex-direction: column;
+	}
+
+	body > div:nth-child(4) > div > div {
+		margin: 1rem 0;
+	}
+	body > div:nth-child(4) > div > div:nth-child(2) {
+		padding: 0;
+	}
+
+	body > div:nth-child(5) {
+		flex-direction: column;
+	}
+
+	body > div:nth-child(5) > div {
+		width: 100%;
+	}
+
+	body > div:nth-child(5) > div:nth-child(2) a {
+		display: block;
+	}
+	body > div:nth-child(5) > div:nth-child(2) {
+		box-sizing: border-box;
+	}
+}
