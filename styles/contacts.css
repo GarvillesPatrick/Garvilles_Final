@@ -1,4 +1,4 @@
-body > div:nth-child(2) {
+#o {
 	text-align: center;
 	padding: 13%;
 	background: url('../images/g.jpg');
@@ -9,19 +9,19 @@ body > div:nth-child(2) {
 }
 
 
-body > div:nth-child(2) > div > :is(h1, p) {
+#o > div > :is(h1, p) {
 	margin: 0;
 }
 
-body > div:nth-child(3) {
+#p {
 	padding: 5% 20%;
 	text-align: center;
 }
 
-body > div:nth-child(3) > div {
+#p > div {
 	display: flex;
 }
-body > div:nth-child(3) > a {
+#p > a {
 	text-decoration: none;
 	background: #72b6c7;
 	display: block;
@@ -32,16 +32,16 @@ body > div:nth-child(3) > a {
 	transition: background 500ms;
 }
 
-body > div:nth-child(3) > a:hover {
+#p > a:hover {
 	background-color: #439eb4;
 }
 
-body > div:nth-child(3) > div > div {
+#p > div > div {
 	width: 50%;
 	padding: 2%;
 }
 
-body > div:nth-child(3) > div > div > :is(input, textarea) {
+#p > div > div > :is(input, textarea) {
 	display: block;
 	padding: 3%;
 	font-size: 2vmin;
@@ -54,45 +54,45 @@ body > div:nth-child(3) > div > div > :is(input, textarea) {
 	resize: none;
 }
 
-body > div:nth-child(3) > div > div > input:focus {
+#p > div > div > input:focus {
 	border: 1px solid #fff700;
 	outline: 0;
 }
 
-body > div:nth-child(3) > div > div:nth-child(2) > textarea {
+#p > div > div:nth-child(2) > textarea {
 	display: inline;
 	width: 100%;
 	height: 100%;
 	margin: 0;
 	outline: 0;
 }
-body > div:nth-child(3) > div > div:nth-child(2) > textarea:focus {
+#p > div > div:nth-child(2) > textarea:focus {
 	border: 1px solid #fff700;
 }
 
-body > div:nth-child(4) {
+#q {
 	padding: 5%;
 	background-color: #72b6c7;
 	color: white;
 }
-body > div:nth-child(4) > div {
+#q > div {
 	display: flex;
 	justify-content: space-between;
 }
 
-body > div:nth-child(4) > div > div:nth-child(1) > h1 {
+#q > div > div:nth-child(1) > h1 {
 	margin: 0;
 }
 
-body > div:nth-child(4) > div > div:nth-child(1) {
+#q > div > div:nth-child(1) {
 	width: 30%;
 }
-body > div:nth-child(4) > div > div:nth-child(2) {
+#q > div > div:nth-child(2) {
 	width: 30%;
 	padding: 5%;
 }
 
-body > div:nth-child(4) > div > div:nth-child(2) > a {
+#q > div > div:nth-child(2) > a {
 	font-size: 3vmin;
 	text-decoration: none;
 	color: white;
@@ -100,24 +100,24 @@ body > div:nth-child(4) > div > div:nth-child(2) > a {
 	text-decoration: underline;
 }
 
-body > div:nth-child(5) {
+#r {
 	display: flex;
 	padding: 5%;
 }
-body > div:nth-child(5) > div {
+#r > div {
 	width: 100%;
 }
 
-body > div:nth-child(5) > div:nth-child(1) img {
+#r > div:nth-child(1) img {
 	height: 100%;
 	width: 100%;
 }
 
-body > div:nth-child(5) > div:nth-child(2) {
+#r > div:nth-child(2) {
 	padding: 5%;
 }
 
-body > div:nth-child(5) > div:nth-child(2) a {
+#r > div:nth-child(2) a {
 	text-align: center;
 	text-decoration: none;
 	color: #3b3d76;
@@ -129,7 +129,7 @@ body > div:nth-child(5) > div:nth-child(2) a {
 	transition: background 500ms, color 500ms;
 }
 
-body > div:nth-child(5) > div:nth-child(2) a:hover {
+#r > div:nth-child(2) a:hover {
 	background-color: #3b3d76;
 	color: white;
 }
@@ -137,44 +137,44 @@ body > div:nth-child(5) > div:nth-child(2) a:hover {
 /* Responsive */
 
 @media screen and (max-width: 640px) {
-	body > div:nth-child(3) > div {
+	#p > div {
 		flex-direction: column;
 	}
-	body > div:nth-child(3) > div > div {
+	#p > div > div {
 		width: 100%;
 		padding: 0;
 	}
-	body > div:nth-child(3) > div > div > :is(input, textarea) {
+	#p > div > div > :is(input, textarea) {
 		margin: 1rem auto;
 	}
 
-	body > div:nth-child(3) > a {
+	#p > a {
 		margin: 1rem auto;
 	}
 
-	body > div:nth-child(4) > div {
+	#q > div {
 		flex-direction: column;
 	}
 
-	body > div:nth-child(4) > div > div {
+	#q > div > div {
 		margin: 1rem 0;
 	}
-	body > div:nth-child(4) > div > div:nth-child(2) {
+	#q > div > div:nth-child(2) {
 		padding: 0;
 	}
 
-	body > div:nth-child(5) {
+	#r {
 		flex-direction: column;
 	}
 
-	body > div:nth-child(5) > div {
+	#r > div {
 		width: 100%;
 	}
 
-	body > div:nth-child(5) > div:nth-child(2) a {
+	#r > div:nth-child(2) a {
 		display: block;
 	}
-	body > div:nth-child(5) > div:nth-child(2) {
+	#r > div:nth-child(2) {
 		box-sizing: border-box;
 	}
 }
