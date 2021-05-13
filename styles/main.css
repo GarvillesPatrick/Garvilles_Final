@@ -687,6 +687,30 @@ footer > div > div:nth-child(1) p {
 	grid-area: i;
 }
 
+/* Responsive */
+@media screen and (max-width: 640px) {
+	#n > div {
+		grid-template-columns: 1fr;
+		grid-template-rows: 1fr 1fr 0.5fr 1fr 1fr 1fr 1fr 1fr 0.5fr;
+		grid-template-areas:
+			'a'
+			'b'
+			'c'
+			'd'
+			'e'
+			'f'
+			'g'
+			'h'
+			'i';
+	}
+	#m > div > div > img {
+		width: 100%;
+	}
+	#n > div > div:nth-child(3), #n > div > div:nth-child(9) {
+		text-align: center;
+	}
+}
+
 /* Contacts */
 #o {
 	text-align: center;
