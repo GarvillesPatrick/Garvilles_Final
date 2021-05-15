@@ -331,6 +331,44 @@ footer > div > div:nth-child(1) p {
 	padding: 10% 25%;
 }
 
+.z {
+	padding: 5% 25%;
+	background-color: #171437;
+	color: white;
+}
+
+.z > h2 {
+	text-align: center;
+}
+
+.z > div > button {
+	width: 32%;
+	padding: 1rem 2rem;
+	background: transparent;
+	font-size: 2vmin;
+	color: white;
+	cursor: pointer;
+	border: 0;
+	border-radius: 10px;
+	transition: background 500ms, color 500ms;
+}
+
+.z > div > button:hover,
+.z > div > button:focus,
+.z > div > button:active {
+	background-color: white;
+	color: #171437;
+}
+
+#eim,
+#humss,
+#gas {
+	display: none;
+	transition: 500ms;
+	padding: 10%;
+	text-align: center;
+}
+
 /* Responsive */
 
 @media screen and (max-width: 1007px) {
@@ -689,10 +727,6 @@ footer > div > div:nth-child(1) p {
 			'e'
 			'f'
 			'g';
-	}
-	#n > div > div:nth-child(3),
-	#n > div > div:nth-child(9) {
-		text-align: center;
 	}
 }
 
