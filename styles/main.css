@@ -933,14 +933,11 @@ footer > div > div:nth-child(1) p {
 
 	#r {
 		flex-direction: column;
+		padding: 5% 0 0 0;
 	}
-
 	#r > div {
 		width: 100%;
-	}
-
-	#r > div:nth-child(2) a {
-		display: block;
+		box-sizing: border-box;
 	}
 	#r > div:nth-child(2) {
 		box-sizing: border-box;
